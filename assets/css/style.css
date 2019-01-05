@@ -1,0 +1,21 @@
+
+
+.holder {
+    margin-right: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.blurb {
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
