@@ -47,10 +47,10 @@ function displayGIF() {
             emptyDiv.append("<p>Rating: " + response.data[i].rating);
             emptyDiv.addClass("holder")
 
-
             $("#display").append(emptyDiv);
+            
+            $("img").on("click", changeState);
         }
-        $("img").on("click", changeState);
     })
     
 }
