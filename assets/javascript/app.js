@@ -53,7 +53,7 @@ function displayGIF() {
         }
         $("img").on("click", changeState);
     })
-    
+    $("img").on("click", changeState);
 }
 
 function changeState() {
