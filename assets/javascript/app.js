@@ -49,8 +49,9 @@ function displayGIF() {
 
             $("#display").append(emptyDiv);
             
-            $("img").on("click", changeState);
+            
         }
+        $("img").on("click", changeState);
     })
     
 }

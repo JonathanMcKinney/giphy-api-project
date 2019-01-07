@@ -1,9 +1,20 @@
+body {
+    background-image: url(../images/O5GLLH0.jpg)
+}
 
 
+.jumbotron {
+    margin: 20px;
+    padding: 20px;
+}
 .holder {
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     float: left;
+}
+
+#display {
+    margin: 10px;
 }
 
 p {
@@ -18,4 +29,10 @@ p {
 .blurb {
     font-size: 1.1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 10px;
 }
