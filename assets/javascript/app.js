@@ -24,7 +24,7 @@ function displayGIF() {
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + q + "&api_key=" + apiKey + "&limit=" + num + "&rating=pg13";
 
     //clears display to show only current button GIFs
-    // $("#display").empty();
+    $("#display").empty();
 
     $.ajax({
         url: queryURL,
@@ -48,8 +48,8 @@ function displayGIF() {
             emptyDiv.addClass("holder")
 
             $("#display").append(emptyDiv);
-            
-            
+
+
         }
         $("img").on("click", changeState);
     })
@@ -83,9 +83,23 @@ $("#add-gif").on("click", function (event) {
 
     $("#button").empty();
     var gif = $("#gif-input").val().trim();
-    topics.push(gif);
 
-    createButtons();
+    for (var j = 0; j < topics.length; j++) {
+        if (gif === topics[j]) {
+            alert("button already exists");
+            createButtons();
+            return;
+        }
+    }
+
+    if (gif === "") {
+        createButtons();
+        return;
+    } else {
+        topics.push(gif);
+        createButtons();
+    }
+
 })
 
 //onClick event to display GIFs
