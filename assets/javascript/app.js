@@ -1,4 +1,4 @@
-var topics = ["Scott Aukerman", "Reggie Watts", "D'arci Carden", "Nick Kroll", "Jason Mantzoukas", "John Mulaney", "Marie Holland"]
+var topics = ["scott aukerman", "reggie watts", "d'arci carden", "nick kroll", "jason mantzoukas", "john mulaney", "marie holland"]
 
 //create buttons
 createButtons();
@@ -82,7 +82,7 @@ $("#add-gif").on("click", function (event) {
     event.preventDefault();
 
     $("#button").empty();
-    var gif = $("#gif-input").val().trim();
+    var gif = $("#gif-input").val().trim().toLowerCase();
 
     for (var j = 0; j < topics.length; j++) {
         if (gif === topics[j]) {
